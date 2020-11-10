@@ -2,21 +2,21 @@
 <head>
 <title>SBR Booking - Admin</title>
 <link rel="icon" type="image/png" href="http://sbr.soc.srcf.net/booking/favicon.png"/>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <table style="border-collapse: collapse; width:100%;height:39px;">
 <tr style="border-bottom: 2px solid #dddddd;text-align: center;border-top: 2px solid #dddddd;">
-<th> <a href="admin">Event View</a> </th>
+<th> <a href="./">Event View</a> </th>
 <th style="font-size:16pt; width:20%;font-family:Calibri,Helvetica, Arial, sans-serif;">SBR Booking - Admin</th>
-<th> <a href="admin?view=crsid">CRSID View </th>
+<th> <a href="?view=crsid">CRSID View </th>
 </tr>
 </table>
 
 <?php
 
 if(in_array($_SERVER['REMOTE_USER'],['hlb54','sp770','dw545','hm404','cmfg2','mms72','ms2340'])){
-    include 'db_connect.php';
+    include './db_connect.php';
 
     if($_GET['event_id']==''){
         $event_id = 38;
@@ -34,7 +34,7 @@ if(in_array($_SERVER['REMOTE_USER'],['hlb54','sp770','dw545','hm404','cmfg2','mm
         ?>
         <div>
         <br>
-        <form method=GET action='admin'>
+        <form method=GET action='./'>
         <select name="event_id" id="cars"  onchange="this.form.submit()">
 
         <option value='--Future Events--' disabled>--Future Events--</option>
@@ -105,7 +105,7 @@ if(in_array($_SERVER['REMOTE_USER'],['hlb54','sp770','dw545','hm404','cmfg2','mm
                         echo ', ';
                     }
                     $p +=1;
-                    echo '<a href="admin?view=crsid&crsid='.$person.'">'.$person.'</a>';
+                    echo '<a href="?view=crsid&crsid='.$person.'">'.$person.'</a>';
                     $event_mailto .= $person.'@cam.ac.uk;';
                 }
                 //echo '<br><br>';
@@ -129,7 +129,7 @@ if(in_array($_SERVER['REMOTE_USER'],['hlb54','sp770','dw545','hm404','cmfg2','mm
                                 echo ', ';
                             }
                             $p +=1;
-                            echo '<a href="admin?view=crsid&crsid='.$person.'">'.$person.'</a>';
+                            echo '<a href="?view=crsid&crsid='.$person.'">'.$person.'</a>';
                             $group_mailto.=$person.'@cam.ac.uk;';
                         }
                         echo " (<a href='".$group_mailto."'>Email Group</a>)";
@@ -173,7 +173,7 @@ if(in_array($_SERVER['REMOTE_USER'],['hlb54','sp770','dw545','hm404','cmfg2','mm
         ?>
         <div>
         <br>
-        <form method='GET' action='admin.php'>
+        <form method='GET' action='./'>
         <input type='hidden' name='view' value='crsid'>
         <label for='crsid'><b>CRSID:</b></label>
         <input type='text' id='crsid' name='crsid'>
@@ -233,7 +233,7 @@ if(in_array($_SERVER['REMOTE_USER'],['hlb54','sp770','dw545','hm404','cmfg2','mm
                 echo '<h3>Past Events</h3>';
             }
             foreach($res as $val){
-                echo '<b>Event Name:</b> <a href="admin?view=event&event_id='.$val['event_id'].'">'.$val['event_name'].'</a><br>';
+                echo '<b>Event Name:</b> <a href="?view=event&event_id='.$val['event_id'].'">'.$val['event_name'].'</a><br>';
                 if($val['event_sub']!=''){
                     echo '<b>Event Subtitle:</b> '.$val['event_sub'].'<br>';
                 }
@@ -253,7 +253,7 @@ if(in_array($_SERVER['REMOTE_USER'],['hlb54','sp770','dw545','hm404','cmfg2','mm
                         echo ', ';
                     }
                     $p +=1;
-                    echo '<a href="admin?view=crsid&crsid='.$person.'">'.$person.'</a>';
+                    echo '<a href="?view=crsid&crsid='.$person.'">'.$person.'</a>';
                 }
                 echo '<br>';
                 if($val['event_groups']==1){
@@ -281,7 +281,7 @@ if(in_array($_SERVER['REMOTE_USER'],['hlb54','sp770','dw545','hm404','cmfg2','mm
                                 echo ', ';
                             }
                             $p +=1;
-                            echo '<a href="admin?view=crsid&crsid='.$person.'">'.$person.'</a>';
+                            echo '<a href="?view=crsid&crsid='.$person.'">'.$person.'</a>';
                         }
                     }
                     if($q==0){
@@ -308,7 +308,7 @@ if(in_array($_SERVER['REMOTE_USER'],['hlb54','sp770','dw545','hm404','cmfg2','mm
                 echo '<h3>Future Events</h3>';
             }
             foreach($res as $val){
-                echo '<b>Event Name:</b> <a href="admin?view=event&event_id='.$val['event_id'].'">'.$val['event_name'].'</a><br>';
+                echo '<b>Event Name:</b> <a href="?view=event&event_id='.$val['event_id'].'">'.$val['event_name'].'</a><br>';
                 if($val['event_sub']!=''){
                     echo '<b>Event Subtitle:</b> '.$val['event_sub'].'<br>';
                 }
@@ -324,7 +324,7 @@ if(in_array($_SERVER['REMOTE_USER'],['hlb54','sp770','dw545','hm404','cmfg2','mm
                         echo ', ';
                     }
                     $p +=1;
-                    echo '<a href="admin?view=crsid&crsid='.$person.'">'.$person.'</a>';
+                    echo '<a href="?view=crsid&crsid='.$person.'">'.$person.'</a>';
                 }
                 echo '<br>';
                 if($val['event_groups']==1){
@@ -352,7 +352,7 @@ if(in_array($_SERVER['REMOTE_USER'],['hlb54','sp770','dw545','hm404','cmfg2','mm
                                 echo ', ';
                             }
                             $p +=1;
-                            echo '<a href="admin?view=crsid&crsid='.$person.'">'.$person.'</a>';
+                            echo '<a href="?view=crsid&crsid='.$person.'">'.$person.'</a>';
                         }
                     }
                     if($q==0){
