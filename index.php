@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>sjcents</title>
+    <title>SJC Ents</title>
     <link rel="stylesheet" href="templates/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="templates/assets/fonts/font-awesome.min.css">
@@ -35,8 +35,8 @@
                         echo '<h4 class="text-center">'.$val['event_name'].'</h4>';
                     echo '</div>';
                     echo '<div class="card-body">';
-                        if($val['event_desc']){
-                            echo '<p>'.$val['event_desc'].'</p>';
+                        if($val['event_sub']){
+                            echo '<p>'.$val['event_sub'].'</p>';
                         }else{
                             echo '<p>Need more info!</p>';
                         }
@@ -99,8 +99,8 @@
             <a class="btn btn-primary btn-lg border-light" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button" style="background: rgba(167,167,167,0.15);color: rgb(33,37,41);font-family: Montserrat, sans-serif;">Disclaimer</a>
                 <div
                     class="collapse" id="collapse-1" style="padding-top: 25px;">
-                    <p style="font-family: Montserrat, sans-serif;">In order to create safe and enjoyable environments for participants in JCR and SBR events, we are asking all attendees to acknowledge the following self-declaration prior to attending event. This and other adaptations are for your
-                        benefit and to protect a large number of people from having to self-isolate in the event that someone subsequently becomes symptomatic.&nbsp;<strong>By booking onto an event, you declare the following:</strong><br></p>
+                    <p style="font-family: Montserrat, sans-serif;">In order to create safe and enjoyable environments for participants in JCR and SBR events, we are asking all attendees to acknowledge the following self-declaration prior to attending in-person events. This and other adaptations are for your
+                        benefit and to protect a large number of people from having to self-isolate in the event that someone subsequently becomes symptomatic.&nbsp;<strong>By booking onto an in-person event, you declare the following:</strong><br></p>
                     <ul>
                         <li class="text-left" style="font-family: Montserrat, sans-serif;">In the last 7 days, I have not displayed any of the below symptoms:<br>
                             <ul>

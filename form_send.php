@@ -168,7 +168,7 @@ if($_POST['send_ref']=='event_book'){
                             //echo date_default_timezone_get();
                             //echo date('Ymd\THis', strtotime($val['event_start_datetime']));
                             $fname = "booking_".strval($val['event_id']).".ics";
-                            $myfile = fopen("../ics_files/".$fname, "w") or die("Unable to open file!");
+                            $myfile = fopen("ics_files/".$fname, "w") or die("Unable to open file!");
                             $txt = "BEGIN:VCALENDAR\n".
                             "VERSION:2.0\n".
                             "PRODID:SBREVENTS\n".
@@ -187,13 +187,13 @@ if($_POST['send_ref']=='event_book'){
                             fclose($myfile);
 
                             //They have been added, so able to email them. 
-                            $subject = "[SBR Events] Booking Confirmation";
+                            $subject = "[SJC Ents] Booking Confirmation";
                             $headers = "MIME-Version: 1.0" . "\r\n";
                             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
                             $message = "
                                 <html>
                                 <head>
-                                <title>SBR Event Confirmation</title>
+                                <title>SJC Event Confirmation</title>
                                 </head>
                                 <body>
                                 <p>Dear ".$_POST['event_bookee'].", <br><br> We are pleased to confirm your booking for the following event.<br><br>";
@@ -208,13 +208,13 @@ if($_POST['send_ref']=='event_book'){
                             $message .= '<br>';
 
                             $to = $_POST['event_bookee']."@cam.ac.uk";
-                            $message .="<a href='http://sbr.soc.srcf.net/ics_files/".$fname."'>Download for Calendar</a><br><br>";
+                            $message .="<a href='http://sjcents.com/ics_files/".$fname."'>Download for Calendar</a><br><br>";
                             $message .= "We look forward to seeing you!<br>
-                            If you can no longer make the event, please cancel your booking <a href='http://sbr.soc.srcf.net/booking'>here</a>.<br>
+                            If you can no longer make the event, please cancel your booking <a href='http://sjcents.com'>here</a>.<br>
                             <br> 
                             From,
                             <br>
-                            The SBR Committee</p>
+                            SJC Ents</p>
                             </body>
                             </html>
                             ";
@@ -236,7 +236,7 @@ if($_POST['send_ref']=='event_book'){
         }
     }
     
-    header('location:../booking/');
+    header('location:./event?id='.$_POST['ref_page']);
     die();
 }elseif($_POST['send_ref']=='groups_add'){
     $chk = 0;
