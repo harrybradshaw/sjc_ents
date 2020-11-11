@@ -14,6 +14,17 @@
 </head>
 
 <body>
+<nav class="navbar navbar-light navbar-expand-md sticky-top" style="background: linear-gradient(black, rgba(0,97,211,0.58) 0%);">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: Montserrat, sans-serif;color: rgba(255,255,255,0.9);">SJC Ents</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#" style="color: rgba(255,255,255,0.9);font-family: Montserrat, sans-serif;">My Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" style="color: rgba(255,255,255,0.9);font-family: Montserrat, sans-serif;">Logout CRSID</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
 <header>
         <section style="background: linear-gradient(rgba(255,255,255,0) 59%, white), url(&quot;templates/assets/img/sjcents1.png&quot;), linear-gradient(rgba(0,97,211,0.58) 0%, white 74%);background-size: auto, auto, auto;height: 301px;"></section>
     </header>
@@ -70,8 +81,16 @@
                 <h2 class="text-left text-black-50" style="/*background-image: linear-gradient(to bottom , #ececec, white);*/font-family: Montserrat, sans-serif;">Event Info</h2>
                 <?php
                 if($val['event_vis']){
-                    $sql_b = "SELECT * FROM hlb_events WHERE event_name = '".$val['event_name']."' AND NOW() < event_end_datetime AND event_vis=1";
+                    $sql_b = "SELECT * FROM hlb_events WHERE event_name = '".addslashes($val["event_name"])."' AND NOW() < event_end_datetime AND event_vis=1";
                     $res_b = $con_sbr->query($sql_b);
+                    foreach($res_b as $val_b){
+                        if($val_b['event_open']){
+                            $booking_flag = true;
+                        }
+                        elseif($val_b['event_reglink']){
+                            $reglink_flag = true;
+                        }
+                    }
                     ?>
                     <div class="table-responsive" style="padding-top: 10px;">
                     <table class="table">
@@ -84,9 +103,11 @@
                             <th>Location</th>
                             <th>Event Start</th>
                             <th>Event End</th>
-                            <?php if ($val['event_open']){
+                            <?php if ($booking_flag){
                             echo '<th>Slots</th>';
                             echo '<th></th>';
+                            }elseif($reglink_flag){
+                                echo '<th></th>';
                             }
                             ?>
                         </tr>
@@ -101,10 +122,10 @@
                         
                         echo '<tr>';
                         if($val_b['event_subname']){
-                            echo '<td>'.$val_b['event_subname'].'</td>';
+                            echo "<td>".addslashes($val_b["event_subname"])."</td>";
                         }
                         if($val_b['event_location']){
-                            echo '<td>'.$val_b['event_location'].'</td>';
+                            echo '<td>'.$val_b["event_location"].'</td>';
                         }else{
                             echo '<td>TBC</td>';
                         }
@@ -142,6 +163,15 @@
                         }
                         
                         echo '</td>';
+                        }elseif($booking_flag){
+                            echo '<td></td>';
+                            echo '<td></td>';
+                        }elseif($val_b['event_reglink']){
+                            echo '<td>';
+                            echo '<button type="submit" class="bkbutton" onclick="location.href=\''.$val['event_reglink'].'\'">Register</button>';
+                            echo '</td>';
+                        }elseif($reglink_flag){
+                            echo '<td></td>';
                         }
                         echo '</tr>';
                     }

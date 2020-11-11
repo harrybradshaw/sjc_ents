@@ -483,7 +483,7 @@ if($_POST['send_ref']=='event_book'){
                         $booked = explode(',',$val['crsid_booked']);
                         if(!in_array($_POST['event_bookee'],$booked)){
                             //They have been removed, so able to email them. 
-                            $subject = "[SBR Events] Booking Cancellation";
+                            $subject = "[SJC Ents] Booking Cancellation";
                             $headers = "MIME-Version: 1.0" . "\r\n";
                             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
                             $message = "
@@ -507,7 +507,7 @@ if($_POST['send_ref']=='event_book'){
                             $message .= "
                             From,
                             <br>
-                            The SBR</p>
+                            SJC Ents</p>
                             </body>
                             </html>
                             ";

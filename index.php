@@ -14,6 +14,17 @@
 </head>
 
 <body>
+<nav class="navbar navbar-light navbar-expand-md sticky-top" style="background: linear-gradient(black, rgba(0,97,211,0.58) 0%);">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: Montserrat, sans-serif;color: rgba(255,255,255,0.9);">SJC Ents</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#" style="color: rgba(255,255,255,0.9);font-family: Montserrat, sans-serif;">My Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" style="color: rgba(255,255,255,0.9);font-family: Montserrat, sans-serif;">Logout CRSID</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
 <header>    
         <section style="background: url(&quot;templates/assets/img/sjcents1.png&quot;), linear-gradient(rgba(0,97,211,0.58) 0%, white 93%);background-size: auto, auto;height: 450px;"></section>
     </header>
@@ -36,9 +47,9 @@
                     echo '</div>';
                     echo '<div class="card-body">';
                         if($val['event_sub']){
-                            echo '<p>'.$val['event_sub'].'</p>';
+                            echo '<p style="font-family: Montserrat, sans-serif;"  class="text-center">'.$val['event_sub'].'</p>';
                         }else{
-                            echo '<p>Need more info!</p>';
+                            
                         }
                         
                         echo '<div class="row">';
