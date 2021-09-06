@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SBREVENTS
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:1621253607
+DTSTART:20210517T184500
+DTEND:20210517T194500
+LOCATION:Scholars\' Garden
+DESCRIPTION:In person grad talks are back! Please join us for the first session of grad talks in the Scholars’ Garden, where we’ll enjoy two short talks from SBR members while sipping on some (free) wine.
+
+A few details about to be aware before arriving:
+
+1. By signing up, this is a declaration that you are COVID-free and have not been exposed to someone who has recently tested positive for COVID or is displaying COVID-like symptoms. When you arrive, you’ll be checked in and given hand sanitizer by a lovely committee member.
+2. You will need to be actively participating in the asymptomatic testing scheme to show up (or NHS lateral flow tests if you aren’t eligible).
+3. Restroom access is limited, so please use the restroom beforehand if you can.
+4. Feel free to bring dinner from the buttery.
+5. Wine and non-alcoholic drinks will be available.
+
+SUMMARY:Grad Talks (in person!)
+UID:944eca6f01b41f48ed8a4ea34bd78570
+END:VEVENT
+END:VCALENDAR

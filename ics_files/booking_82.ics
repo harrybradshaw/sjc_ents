@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SBREVENTS
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:1605025966
+DTSTART:20201119T193000
+DTEND:20201119T210000
+LOCATION:
+DESCRIPTION:Join us this Thursday evening for a unique university challenge experience on zoom, hosted by James Devine-Stoneman, captain of the 2018 winning team! Please provide your team name as well as that of those you will be playing with. A free hot drink and cake in the bar for each winner !
+SUMMARY:Johnsbridge University Challenge
+UID:41c2a919f5405b99f266909c03f4f797
+END:VEVENT
+END:VCALENDAR

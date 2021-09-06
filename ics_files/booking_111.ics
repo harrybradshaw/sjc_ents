@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SBREVENTS
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:1624041557
+DTSTART:20210618T200000
+DTEND:20210618T220000
+LOCATION:Palmerston Room
+DESCRIPTION:Join us for a welfare break to come and watch the match with up to five of your friends in a seated group! Couple of notices:
+
+1. Groups are to be spaced at least three seats and/or two rows apart from each other. 
+
+2. Enter Palmerston in one direction and exit via the other. 
+
+3. Hand sanitizer will be provided to you upon entry. 
+
+4. COVID testing mandatory - proof of negative asymptomatic test or lateral flow required on the door in addition to identity checks to confirm you are a student at Johns. Registering for the event serves as a declaration that, to the best of your knowledge, you have not been in contact with someone who has tested positive for COVID or displayed COVID-like symptoms.
+
+5. Masks to be worn at all times unless eating or drinking.
+
+6. Restroom access is limited, so please try to use the loo at home before showing up! Please try to only leave your seated areas at halftime or the end of the match if you can manage :)
+
+7. Have fun!
+SUMMARY:SJC Ents Watches: England vs Scotland
+UID:22d95b9e1cbb29888b792f4722cf2046
+END:VEVENT
+END:VCALENDAR

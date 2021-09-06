@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SBREVENTS
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:1628956904
+DTSTART:20210814T180000
+DTEND:20210814T200000
+LOCATION:Merton Court
+DESCRIPTION:Join us for a fun evening of friends, fun and drinks (also non-alcoholic). The event costs £5, which will be charged to your college account.
+SUMMARY:Pimm\'s Party 2.0
+UID:ab750dc48c8f7265aa7d713dbcc7dbc3
+END:VEVENT
+END:VCALENDAR

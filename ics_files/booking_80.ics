@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SBREVENTS
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:1605036310
+DTSTART:20201109T100000
+DTEND:20201231T140000
+LOCATION:
+DESCRIPTION:Need an escape from the real world? Be transported with a good book - the perfect lockdown activity. Meet for weekly discussions and get a free book too. We will vote on a book once we have an idea of numbers.
+
+And please suggest any books you think would be good: classics you\'ve always wanted some added incentive to read, an amazing book you want to share, or one that\'s come highly recommended to you.
+
+If there\'s enough interest we may have more than one group, with the option to have different books read in each group.
+
+I\'ll also be posting a list of book recommendations and will include suggestions. So keep an eye out if you\'re interested.
+
+(Tom will drop the books into your pigeon hole as soon as they arrive)
+SUMMARY:Book Club
+UID:8052bd69ccffe35eeb4f14dbc67c3c54
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SBREVENTS
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:1605967720
+DTSTART:20201120T000000
+DTEND:20201125T000000
+LOCATION:SJC
+DESCRIPTION:With Bridgemas coming closer and closer, it\'s time for the SJC Secret Santa! 
+
+Please sign up by Friday 20th November, you will be given the name of your giftee on Saturday and you have until Wednesday the 25th to put their gift in their pidge or to the porters if it cant fit! There is a gift price limit of £10!
+
+Contact Nordin Catic (nc466) if you have any questions.
+SUMMARY:SJC Secret Santa
+UID:7675610547db99347b08686d0abdc713
+END:VEVENT
+END:VCALENDAR

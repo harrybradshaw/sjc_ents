@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SBREVENTS
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:1620924180
+DTSTART:20210514T180000
+DTEND:20210514T200000
+LOCATION:Wherever!!
+DESCRIPTION:Johnians, meet up for dinner or go to a pub, your choice! You can find recommendations in the Freshers guide. Groups will be randomly allocated before the event.
+SUMMARY:Six in the City II
+UID:e79b0c5f6f3fb227196f46657647c6e5
+END:VEVENT
+END:VCALENDAR

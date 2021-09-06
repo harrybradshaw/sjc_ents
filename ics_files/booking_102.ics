@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SBREVENTS
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:1620860650
+DTSTART:20210526T180000
+DTEND:20210526T193000
+LOCATION:The Paddock
+DESCRIPTION:Join a group of 6 postgrads and begin your journal into the world of wine with THE Bill Brogan, a Michelin star and Catey award recipient! The event is subsidised by the SBR, now only £10 (it doesn\'t get much better than this folks!!!) and will be charged on your college bill next term. A few things to point out before signing up:
+
+1. By signing up, this is a declaration that you are COVID-free and have not been exposed to someone who has recently tested positive for COVID or is displaying COVID-like symptoms. When you arrive, you\'ll be checked in and given hand sanitizer by a lovely committee member.
+2. You will need to be actively participating in the asymptomatic testing scheme to show up (or NHS lateral flow tests if you aren\'t eligible). No negative test result within the last seven days, no wine tasting (at least not with us)! It will also be impossible to reimburse if you no longer can attend within 48 hours, so please do keep this in mind!
+3. Restroom access is limited, so please use the restroom beforehand if you can.
+4. Have fun and may your palates for wine develop faster than a polaroid picture xoxo
+SUMMARY:Wine Tasting
+UID:85ab067213b4d3e65d39e0dcb037482f
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SBREVENTS
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:1622724638
+DTSTART:20210603T180000
+DTEND:20210603T193000
+LOCATION:Fellows\' Garden
+DESCRIPTION:Join Miss Tomaselli and the tutors for a small wine & prosecco reception to meet your tutors and learn more about how they can support you throughout your time here at St John\'s!
+SUMMARY:First Year PhD Reception with Tutors
+UID:1e25472abcdc5e2da72677c990504c32
+END:VEVENT
+END:VCALENDAR

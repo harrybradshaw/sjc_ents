@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SBREVENTS
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:1621616387
+DTSTART:20210521T183000
+DTEND:20210521T200000
+LOCATION:Scholars\' Garden
+DESCRIPTION:Join us for a fab evening with your fellow postgrads and a Pimm\'s or four (please drink responsibly, we will cut you off otherwise)! A few details to be aware of before arriving:
+
+1. Restroom access is available but limited, so use the loo before if possible!
+2. Registering for the event serves as a declaration that, to the best of your knowledge, you have not been in contact with someone who has tested positive for COVID or displayed COVID-like symptoms.
+3. Be prepared to have your asymptomatic test results (or NHS lateral flow if you aren\'t eligible for the asymptomatic testing scheme) when checking in with a committee member. You\'ll also be provided with a lovely squirt of isopropanol-scented hand sani!
+4. You\'ll be placed in a group of six with the folks you arrive with; no mixing of groups is allowed throughout the event because we\'re operating above the 30-person limit set out in government guidelines, so coordinate with your mates or make some new friends!
+5. Non-alcoholic refreshments available to those who would like!
+6. Have fun and be yourself xoxo
+SUMMARY:Pimm\'s Party
+UID:530752ad9b21d155224b20dc57074de7
+END:VEVENT
+END:VCALENDAR

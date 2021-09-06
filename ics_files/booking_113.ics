@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:SBREVENTS
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:1630916589
+DTSTART:20210919T163000
+DTEND:20210919T183000
+LOCATION:Master\'s Garden
+DESCRIPTION:Come along to the Master\'s Garden on Sunday 19th September at 16:30 for a late afternoon of creative wonder. The SBR are showing a Bob Ross tutorial for us all to follow along. We will provide everything you need to complete your masterpiece.
+
+Everyone coming must bring a negative Lateral Flow Test and proof they have registered the test that day or the previous day. Hand sanitiser will be available during the event.
+SUMMARY:Bob Ross Art Evening
+UID:47715333289c65b94ca6715a44bb205b
+END:VEVENT
+END:VCALENDAR

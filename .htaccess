@@ -1,0 +1,14 @@
+order deny,allow
+deny from all
+AuthType Ucam-WebAuth
+AuthLDAPURL "ldap://ldap.lookup.cam.ac.uk/ou=people,o=University of Cambridge,dc=cam,dc=ac,dc=uk?uid?sub?(instid=JOHNS)"
+Require valid-user
+Satisfy any
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
